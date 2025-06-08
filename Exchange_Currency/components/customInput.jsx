@@ -5,7 +5,7 @@ function CustomInput(props) {
   const inputref = useRef(null);
 
   useEffect(() => {
-    if (props.label === "From") {
+    if (props.label === "From" && inputref.current) {
       inputref.current.focus();
     }
   }, []);
@@ -28,7 +28,11 @@ function CustomInput(props) {
             value={props.amount}
             ref={inputref}
             onChange={(e) => {
-              props.onAmountChange(Number(e.target.value));
+              const value = e.target.value;
+              const numValue = value === "" ? "" : Number(value);
+              if (!isNaN(numValue) || value === "") {
+                props.onAmountChange(numValue);
+              }
             }}
             onKeyDown={(e) => {
               if (e.key === "Enter" && props.onEnter) props.onEnter();
@@ -48,7 +52,7 @@ function CustomInput(props) {
               props.onCurrencyChange(e.target.value);
             }}
           >
-            {props.currencyOptions.map((currency) => (
+            {(props.currencyOptions || []).map((currency) => (
               <option key={currency} value={currency}>
                 {currency.toUpperCase()}
               </option>

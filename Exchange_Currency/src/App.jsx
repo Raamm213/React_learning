@@ -14,7 +14,13 @@ function App() {
   const options = ratio ? Object.keys(ratio) : [];
 
   const convert = useCallback(() => {
-    setConvertedAmount(Math.round(amount * ratio[to] * 100) / 100);
+    if (!amount || isNaN(amount) || !ratio || !ratio[to]) {
+      setConvertedAmount("");
+      return;
+    }
+    const numAmount = Number(amount);
+    const result = Math.round(numAmount * ratio[to] * 100) / 100;
+    setConvertedAmount(result);
   }, [ratio, to, amount]);
 
   const swap = () => {
