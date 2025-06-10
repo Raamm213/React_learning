@@ -1,17 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { useLoaderData } from "react-router-dom";
+
 
 function Github() {
-  const [data, setData] = useState("");
 
-  useEffect(() => {
-    fetch(`https://api.github.com/users/Raamm213`)
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        setData(data)
-      });
-  }, []);
-
+  const data = useLoaderData();
   return (
     <div className="w-full text-black text-3xl text-center py-5">
       Github Name: ${data.name}
@@ -21,3 +14,13 @@ function Github() {
 }
 
 export default Github;
+
+
+
+export async  function LoaderGithub() {
+
+  const response = await fetch(`https://api.github.com/users/Raamm213`);
+  const data = response.json();
+  return data
+}
+
