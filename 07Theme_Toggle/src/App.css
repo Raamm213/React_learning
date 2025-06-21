@@ -1,0 +1,11 @@
+.my-dark {
+  background-color: #18181b !important;
+  color: #fff !important;
+  transition: background 0.3s, color 0.3s;
+}
+
+.my-light {
+  background-color: #fff !important;
+  color: #18181b !important;
+  transition: background 0.3s, color 0.3s;
+}
