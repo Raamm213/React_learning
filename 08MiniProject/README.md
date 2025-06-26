@@ -1,23 +1,23 @@
-📝 Todo Manager App
+#📝 Todo Manager App
 A simple and elegant Todo List app built with React, using custom context hooks, modular components, and localStorage for persistence.
 
 
-🚀 Features
-✅ Add, delete, update todos
+##🚀 Features
+###✅ Add, delete, update todos
 
-🎯 Mark todos as complete/incomplete
+###🎯 Mark todos as complete/incomplete
 
-♻️ Data persists using localStorage
+###♻️ Data persists using localStorage
 
-🪝 Uses React Context and custom hooks (useTodoContext)
+###🪝 Uses React Context and custom hooks (useTodoContext)
 
-💅 Tailwind CSS styling for a modern UI
+###💅 Tailwind CSS styling for a modern UI
 
-📂 Project Structure
+##📂 Project Structure
 php
 Copy
 Edit
-08MiniProject/
+##08MiniProject/
 │
 ├── public/
 ├── src/
@@ -35,17 +35,17 @@ Edit
 ├── package.json
 ├── vite.config.js
 └── README.md                 # You are here
-🛠️ Technologies Used
-⚛️ React (with Vite)
+###🛠️ Technologies Used
+###⚛️ React (with Vite)
 
-🎣 React Context + Custom Hook (useTodoContext)
+###🎣 React Context + Custom Hook (useTodoContext)
 
-💾 localStorage
+###💾 localStorage
 
-💨 Tailwind CSS
+###💨 Tailwind CSS
 
-📦 Setup Instructions
-Clone the repo
+###📦 Setup Instructions
+##Clone the repo
 
 bash
 Copy
@@ -65,11 +65,11 @@ Copy
 Edit
 npm run dev
 
-📸 Screenshots
+##📸 Screenshots
 
 (Make sure to add your screenshot as src/assets/todo-screenshot.png)
 
-📌 Learnings
+##📌 Learnings
 How to manage global state with React Context
 
 Building and using custom hooks
@@ -80,7 +80,7 @@ Component-based React architecture
 
 Styling with Tailwind CSS
 
-🧠 Author
+##🧠 Author
 Rethees 
 GitHub
 
