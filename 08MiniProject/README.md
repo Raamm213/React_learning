@@ -15,7 +15,7 @@ A simple and elegant Todo List app built with React, using custom context hooks,
 ---
 
 ## 📁 Project Structure
-<pre> ```bash 08MiniProject/ 
+<pre> bash 08MiniProject/ 
 ├── public/ 
 ├── src/ 
 │ ├── assets/ # Images or static assets 
@@ -30,7 +30,7 @@ A simple and elegant Todo List app built with React, using custom context hooks,
 ├── index.html 
 ├── package.json 
 ├── vite.config.js 
-└── README.md # You are here ``` </pre>
+└── README.md # You are here  </pre>
 ---
 
 ## 🛠️ Technologies Used
